@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TesteAutoGlass.Infraestruture.Data\TesteAutoGlass.Infraestruture.Data.csproj" />
+    <ProjectReference Include="..\TesteAutoGlass.Produtos.Domain\TesteAutoGlass.Produtos.Domain.csproj" />
+    <ProjectReference Include="..\TesteAutoGlass.Utils.Abstractions.Command\TesteAutoGlass.Utils.Abstractions.Command.csproj" />
+    <ProjectReference Include="..\TesteAutoGlass.Utils.Abstractions.Pagination\TesteAutoGlass.Utils.Abstractions.Pagination.csproj" />
+  </ItemGroup>
+
+</Project>

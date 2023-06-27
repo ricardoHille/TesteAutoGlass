@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TesteAutoGlass.Fornecedores.Domain/1.0.0": {
+        "dependencies": {
+          "TesteAutoGlass.Utils.Abstractions.Entities": "1.0.0",
+          "TesteAutoGlass.Utils.Validators": "1.0.0"
+        },
+        "runtime": {
+          "TesteAutoGlass.Fornecedores.Domain.dll": {}
+        }
+      },
+      "TesteAutoGlass.Utils.Abstractions.Entities/1.0.0": {
+        "runtime": {
+          "TesteAutoGlass.Utils.Abstractions.Entities.dll": {}
+        }
+      },
+      "TesteAutoGlass.Utils.Validators/1.0.0": {
+        "runtime": {
+          "TesteAutoGlass.Utils.Validators.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TesteAutoGlass.Fornecedores.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TesteAutoGlass.Utils.Abstractions.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TesteAutoGlass.Utils.Validators/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

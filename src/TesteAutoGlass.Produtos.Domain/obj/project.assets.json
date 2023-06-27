@@ -1,0 +1,129 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "TesteAutoGlass.Fornecedores.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TesteAutoGlass.Utils.Abstractions.Entities": "1.0.0",
+          "TesteAutoGlass.Utils.Validators": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TesteAutoGlass.Fornecedores.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TesteAutoGlass.Fornecedores.Domain.dll": {}
+        }
+      },
+      "TesteAutoGlass.Utils.Abstractions.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TesteAutoGlass.Utils.Abstractions.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TesteAutoGlass.Utils.Abstractions.Entities.dll": {}
+        }
+      },
+      "TesteAutoGlass.Utils.Validators/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TesteAutoGlass.Utils.Validators.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TesteAutoGlass.Utils.Validators.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TesteAutoGlass.Fornecedores.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TesteAutoGlass.Fornecedores.Domain/TesteAutoGlass.Fornecedores.Domain.csproj",
+      "msbuildProject": "../TesteAutoGlass.Fornecedores.Domain/TesteAutoGlass.Fornecedores.Domain.csproj"
+    },
+    "TesteAutoGlass.Utils.Abstractions.Entities/1.0.0": {
+      "type": "project",
+      "path": "../TesteAutoGlass.Utils.Abstractions.Entities/TesteAutoGlass.Utils.Abstractions.Entities.csproj",
+      "msbuildProject": "../TesteAutoGlass.Utils.Abstractions.Entities/TesteAutoGlass.Utils.Abstractions.Entities.csproj"
+    },
+    "TesteAutoGlass.Utils.Validators/1.0.0": {
+      "type": "project",
+      "path": "../TesteAutoGlass.Utils.Validators/TesteAutoGlass.Utils.Validators.csproj",
+      "msbuildProject": "../TesteAutoGlass.Utils.Validators/TesteAutoGlass.Utils.Validators.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "TesteAutoGlass.Fornecedores.Domain >= 1.0.0",
+      "TesteAutoGlass.Utils.Abstractions.Entities >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ricardo.hille\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Produtos.Domain\\TesteAutoGlass.Produtos.Domain.csproj",
+      "projectName": "TesteAutoGlass.Produtos.Domain",
+      "projectPath": "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Produtos.Domain\\TesteAutoGlass.Produtos.Domain.csproj",
+      "packagesPath": "C:\\Users\\ricardo.hille\\.nuget\\packages\\",
+      "outputPath": "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Produtos.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ricardo.hille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Fornecedores.Domain\\TesteAutoGlass.Fornecedores.Domain.csproj": {
+              "projectPath": "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Fornecedores.Domain\\TesteAutoGlass.Fornecedores.Domain.csproj"
+            },
+            "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Utils.Abstractions.Entities\\TesteAutoGlass.Utils.Abstractions.Entities.csproj": {
+              "projectPath": "C:\\AutoGlass\\backend\\TesteAutoGlass\\src\\TesteAutoGlass.Utils.Abstractions.Entities\\TesteAutoGlass.Utils.Abstractions.Entities.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
