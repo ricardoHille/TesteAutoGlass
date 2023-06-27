@@ -29,7 +29,7 @@ namespace TesteAutoGlass.Fornecedores.Application.CommandHandlers
 
         public async Task<ValidationResult> Handle(CriarFornecedorCommand request, CancellationToken cancellationToken)
         {
-            var fornecedorExistente = _fornecedorRepository.Find(x => x.Cnpj.Equals(request.Cnpj)).Any();
+            var fornecedorExistente = _fornecedorRepository.Find(x => x.Ativo && x.Cnpj.Equals(request.Cnpj)).Any();
 
             if (fornecedorExistente)
             {
@@ -51,7 +51,7 @@ namespace TesteAutoGlass.Fornecedores.Application.CommandHandlers
 
         public async Task<ValidationResult> Handle(EditarFornecedorCommand request, CancellationToken cancellationToken)
         {
-            var fornecedorExistente = _fornecedorRepository.Find(x => x.Id == request.Id || (x.Id != request.Id && x.Cnpj.Equals(request.Cnpj)));
+            var fornecedorExistente = _fornecedorRepository.Find(x => x.Ativo && x.Id == request.Id || (x.Id != request.Id && x.Cnpj.Equals(request.Cnpj)));
 
             if (!fornecedorExistente.Any(x => x.Id == request.Id))
             {
@@ -59,7 +59,7 @@ namespace TesteAutoGlass.Fornecedores.Application.CommandHandlers
                 return ValidationResult;
             }
 
-            if (fornecedorExistente.Any(x => x.Id != request.Id && x.Cnpj.Equals(request.Cnpj)))
+            if (fornecedorExistente.Any(x => x.Id != request.Id && x.Cnpj.Equals(request.Cnpj) && x.Ativo))
             {
                 AddError($"Não foi possível editar o fornecedor, pois já existe um fornecedor com o mesmo cnpj {request.Cnpj} na base de dados");
                 return ValidationResult;    

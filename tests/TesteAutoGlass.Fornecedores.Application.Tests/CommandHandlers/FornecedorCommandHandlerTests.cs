@@ -63,13 +63,14 @@ namespace TesteAutoGlass.Fornecedores.Application.Tests.CommandHandlers
             var command = new CriarFornecedorCommand
             {
                 Cnpj = "23405692000153",
-                Nome = "Fornecedor teste",
+                Nome = "Fornecedor teste"
             };
 
             var fornecedor = new Fornecedor
             {
                 Cnpj = "23405692000153",
-                Nome = "Fornecedor"
+                Nome = "Fornecedor",
+                Ativo = true
             };
 
             _fornecedorRepository.Setup(x => x.Find(It.Is<Expression<Func<Fornecedor, bool>>>(exp => exp.Compile()(fornecedor))))
@@ -117,7 +118,8 @@ namespace TesteAutoGlass.Fornecedores.Application.Tests.CommandHandlers
             {
                 Id = 1,
                 Cnpj = "23405692000153",
-                Nome = "Fornecedor"
+                Nome = "Fornecedor",
+                Ativo = true
             };
 
             _fornecedorRepository.Setup(x => x.Find(It.Is<Expression<Func<Fornecedor, bool>>>(exp => exp.Compile()(fornecedor))))
@@ -174,13 +176,15 @@ namespace TesteAutoGlass.Fornecedores.Application.Tests.CommandHandlers
                 {
                     Id = 2,
                     Cnpj = "23405692000153",
-                    Nome = "Fornecedor"
+                    Nome = "Fornecedor",
+                    Ativo = true
                 },
                 new Fornecedor
                 {
                     Id = 1,
                     Cnpj = "49647080000160",
                     Nome = "Fornecedor 1",
+                    Ativo = true
                 }
             };
 
@@ -209,7 +213,8 @@ namespace TesteAutoGlass.Fornecedores.Application.Tests.CommandHandlers
             {
                 Id = 1,
                 Cnpj = "23405692000153",
-                Nome = "Fornecedor"
+                Nome = "Fornecedor",
+                Ativo = true
             };
 
             _fornecedorRepository.Setup(x => x.Find(It.Is<Expression<Func<Fornecedor, bool>>>(exp => exp.Compile()(fornecedor))))
